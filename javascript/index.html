@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Numbers:
+        let a = 10;
+        let b = 3.14;
+        let c = a + b; // c is now 13.14
+        console.log(typeof a); // "number"
+        console.log(typeof b); // "number"
+        // Strings:
+        let name = "John";
+        let message = `Hello ${name}!`;
+        console.log(message); // "Hello John!"
+        console.log(name.length); // 4
+        console.log(name.toUpperCase()); // "JOHN"
+        // Booleans:
+        let isStudent = true;
+        let isTeacher = false;
+        console.log(isStudent && isTeacher); // false
+        console.log(isStudent || isTeacher); // true
+
+        // Null and Undefined:
+        let city = null;
+        let country;
+        console.log(city); // null
+        console.log(country); // undefined
+        console.log(typeof city); // "object"
+        console.log(typeof country); // "undefined"
+        // Objects:
+        let person = {
+            name: "John",
+            age: 30,
+            hobbies: ["reading", "running"],
+            greet: function() {
+                console.log(`Hello, my name is ${this.name}!`);
+            },
+        };
+        console.log(person.name); // "John"
+        console.log(person.hobbies[1]); // "running"
+        person.greet(); // "Hello, my name is John!"
+        // Arrays:
+        let fruits = ["apple", "banana", "orange"];
+        console.log(fruits.length); // 3
+        console.log(fruits[1]); // "banana"
+        fruits.push("grape");
+        console.log(fruits); // ["apple", "banana", "orange", "grape"]
+        // Symbols:
+        const id1 = Symbol("id");
+        const id2 = Symbol("id");
+        console.log(id1 === id2); // false
+    </script>
+
+</body>
+
+</html>
